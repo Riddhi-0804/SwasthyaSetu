@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Emergency Help | SwasthyaSetu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="patient.html"
+          ><span class="brand-mark">✚</span
+          ><span
+            ><strong>SwasthyaSetu</strong
+            ><small>Emergency Help • आपातकालीन सहायता</small></span
+          ></a
+        ><a class="button button-secondary button-small" href="patient.html"
+          >← Dashboard</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="section emergency-section">
+        <div class="container narrow">
+          <p class="eyebrow">Immediate support • तुरंत सहायता</p>
+          <h1>🚨 Emergency Help</h1>
+          <p>
+            If this is a medical emergency, contact your local emergency service
+            or go to the nearest emergency department immediately.
+          </p>
+          <p class="hindi-line">
+            अगर यह आपातकाल है, तुरंत स्थानीय आपातकालीन सेवा से संपर्क करें।
+          </p>
+          <div class="emergency-actions">
+            <button class="button emergency-large" id="emergencyCall">
+              🚑 Emergency Help</button
+            ><a class="button button-secondary" href="healthcare.html"
+              >Find Nearest Hospital</a
+            ><button class="button button-secondary" id="callServices">
+              Call Emergency Services
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="modal" id="modal" role="dialog" aria-modal="true" hidden>
+      <div class="modal-card">
+        <button class="modal-close" id="modalClose">×</button>
+        <h2 id="modalTitle">Message</h2>
+        <p id="modalMessage"></p>
+        <button class="button button-primary" id="modalOk">Okay</button>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <strong>SwasthyaSetu</strong><span>In an emergency, act now</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

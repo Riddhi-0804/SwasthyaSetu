@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Health Record | SwasthyaSetu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="patient.html"
+          ><span class="brand-mark">✚</span
+          ><span
+            ><strong>SwasthyaSetu</strong
+            ><small>Health Record • स्वास्थ्य रिकॉर्ड</small></span
+          ></a
+        ><a class="button button-secondary button-small" href="patient.html"
+          >← Dashboard</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div>
+            <p class="breadcrumb">My Health / Health Record</p>
+            <h1>My Health Record</h1>
+            <p class="hindi-line">Aapki zaroori sehat ki jaankari.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container two-column">
+          <div>
+            <div class="info-card">
+              <p class="eyebrow">Personal information</p>
+              <h2>Ramesh Kumar</h2>
+              <dl class="data-grid">
+                <dt>Age</dt>
+                <dd>56 years</dd>
+                <dt>Village</dt>
+                <dd>Village XYZ</dd>
+                <dt>Blood Group</dt>
+                <dd>Not added</dd>
+              </dl>
+            </div>
+            <div class="info-card">
+              <h3>Medical History</h3>
+              <p>
+                <span class="tag">Diabetes</span
+                ><span class="tag">Hypertension</span>
+              </p>
+            </div>
+          </div>
+          <div class="info-card">
+            <p class="eyebrow">Your reports</p>
+            <h2>Reports</h2>
+            <ul class="report-list">
+              <li>
+                📄 Blood Test
+                <button class="small-button" data-report="Blood Test">
+                  View
+                </button>
+              </li>
+              <li>
+                📄 ECG
+                <button class="small-button" data-report="ECG">View</button>
+              </li>
+              <li>
+                📄 X-Ray
+                <button class="small-button" data-report="X-Ray">View</button>
+              </li>
+            </ul>
+            <p class="muted">
+              Only the information needed for your care is shown.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="modal" id="modal" role="dialog" aria-modal="true" hidden>
+      <div class="modal-card">
+        <button class="modal-close" id="modalClose">×</button>
+        <h2 id="modalTitle">Message</h2>
+        <p id="modalMessage"></p>
+        <button class="button button-primary" id="modalOk">Okay</button>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <strong>SwasthyaSetu</strong><span>Your information, your control</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

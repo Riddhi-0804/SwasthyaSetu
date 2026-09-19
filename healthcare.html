@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Find Healthcare | SwasthyaSetu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="patient.html"
+          ><span class="brand-mark">✚</span
+          ><span
+            ><strong>SwasthyaSetu</strong
+            ><small>Find Healthcare • इलाज खोजें</small></span
+          ></a
+        ><button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          Menu
+        </button>
+        <nav id="primaryNav" class="primary-nav">
+          <a href="patient.html">Dashboard</a
+          ><a href="healthcare.html">Find Healthcare</a
+          ><a href="referral.html">My Referrals</a
+          ><a href="appointment.html">Appointments</a
+          ><a href="health-record.html">Health Record</a
+          ><button class="language-switch" id="languageSwitch">
+            English | हिंदी
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div>
+            <p class="breadcrumb">My Health / Find Healthcare</p>
+            <h1>Find the Right Healthcare</h1>
+            <p class="hindi-line">Aapko kis tarah ki madad chahiye?</p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="category-grid" id="categoryGrid">
+            <button class="category active" data-category="General Healthcare">
+              🩺<span>General Healthcare</span></button
+            ><button class="category" data-category="Cardiology">
+              ❤️<span>Heart / Cardiology</span></button
+            ><button class="category" data-category="Orthopedics">
+              🦴<span>Bones / Orthopedics</span></button
+            ><button class="category" data-category="Women's Health">
+              👩<span>Women's Health</span></button
+            ><button class="category" data-category="Child Healthcare">
+              👶<span>Child Healthcare</span></button
+            ><button class="category" data-category="Dental">
+              🦷<span>Dental Care</span></button
+            ><button class="category category-danger" data-category="Emergency">
+              🚨<span>Emergency</span>
+            </button>
+          </div>
+          <button class="location-button" id="locationButton">
+            📍 Use my location / मेरा स्थान
+          </button>
+          <p class="location-status" id="locationStatus"></p>
+          <div class="results-heading">
+            <h2>Suitable options near you</h2>
+            <span id="selectedCategory">General Healthcare</span>
+          </div>
+          <div class="hospital-list" id="hospitalList"></div>
+        </div>
+      </section>
+      <section class="section section-soft" id="assistant">
+        <div class="container narrow">
+          <div class="section-heading">
+            <p class="eyebrow">Healthcare Navigation Assistant</p>
+            <h2>Tell us what you need</h2>
+            <p>
+              You can type or speak.
+              <span class="hindi-line">अपनी समस्या बोलकर बताएं।</span>
+            </p>
+          </div>
+          <div class="assistant-box">
+            <button class="mic-button" id="voiceButton">🎤</button>
+            <p id="voiceLabel">Tap and Speak / बोलकर बताएं</p>
+            <p class="voice-example" id="voiceExample" hidden>
+              “Mujhe teen din se saans lene mein dikkat ho rahi hai.”
+            </p>
+            <div class="understood" id="understood" hidden>
+              <h3>We understood / हमने समझा:</h3>
+              <ul>
+                <li>Breathing difficulty</li>
+                <li>Duration: 3 days</li>
+              </ul>
+              <p class="notice">
+                A healthcare professional should evaluate your symptoms.
+              </p>
+            </div>
+          </div>
+          <button class="text-button" id="readAloud">
+            🔊 Read Aloud / सुनें
+          </button>
+        </div>
+      </section>
+    </main>
+    <div class="modal" id="modal" role="dialog" aria-modal="true" hidden>
+      <div class="modal-card">
+        <button class="modal-close" id="modalClose">×</button>
+        <h2 id="modalTitle">Message</h2>
+        <p id="modalMessage"></p>
+        <button class="button button-primary" id="modalOk">Okay</button>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <strong>SwasthyaSetu</strong><span>Simple care, clear steps</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

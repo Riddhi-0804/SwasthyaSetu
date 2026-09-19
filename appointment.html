@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Appointment | SwasthyaSetu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="patient.html"
+          ><span class="brand-mark">✚</span
+          ><span
+            ><strong>SwasthyaSetu</strong
+            ><small>Appointment • अपॉइंटमेंट</small></span
+          ></a
+        ><a class="button button-secondary button-small" href="patient.html"
+          >← Dashboard</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div>
+            <p class="breadcrumb">My Health / Appointment</p>
+            <h1>
+              Appointment Confirmed <span class="hindi-line">✓ तय हो गई</span>
+            </h1>
+            <p>Keep this page handy for your visit.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container two-column">
+          <div class="info-card">
+            <p class="eyebrow">Your visit</p>
+            <h2>City Care Hospital</h2>
+            <dl class="data-grid">
+              <dt>Department</dt>
+              <dd>Cardiology</dd>
+              <dt>Date</dt>
+              <dd>24 September 2026</dd>
+              <dt>Time</dt>
+              <dd>11:30 AM</dd>
+              <dt>Location</dt>
+              <dd>City Hospital Road</dd>
+            </dl>
+            <div class="button-row">
+              <button class="button button-primary" id="saveAppointment">
+                Add to My Appointments</button
+              ><button class="button button-secondary" type="button">
+                Contact Hospital
+              </button>
+            </div>
+          </div>
+          <div>
+            <div class="info-card">
+              <h3>How will you reach the hospital?</h3>
+              <div class="transport-item">
+                <b>🚑 Ambulance</b><span>Estimated arrival: 25 minutes</span
+                ><button class="small-button" type="button">
+                  View Details
+                </button>
+              </div>
+              <div class="transport-item">
+                <b>🚌 Public Transport</b><span>Next available: 10:20 AM</span
+                ><button class="small-button" type="button">
+                  View Details
+                </button>
+              </div>
+              <div class="transport-item">
+                <b>🚗 Community Transport</b><span>Available</span
+                ><button class="small-button" type="button">
+                  View Details
+                </button>
+              </div>
+            </div>
+            <div class="info-card">
+              <h3>Estimated Healthcare Cost</h3>
+              <p class="hindi-line">अनुमानित खर्च</p>
+              <dl class="cost-list">
+                <dt>Consultation</dt>
+                <dd>₹300–500</dd>
+                <dt>Basic tests</dt>
+                <dd>₹500–1,000</dd>
+                <dt>Transportation</dt>
+                <dd>₹200–400</dd>
+                <dt><strong>Estimated total</strong></dt>
+                <dd><strong>₹1,000–1,900</strong></dd>
+              </dl>
+              <p class="muted">
+                Actual costs may vary. Please confirm with the healthcare
+                provider.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="modal" id="modal" role="dialog" aria-modal="true" hidden>
+      <div class="modal-card">
+        <button class="modal-close" id="modalClose">×</button>
+        <h2 id="modalTitle">Message</h2>
+        <p id="modalMessage"></p>
+        <button class="button button-primary" id="modalOk">Okay</button>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <strong>SwasthyaSetu</strong><span>Reach with confidence</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
